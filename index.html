@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Conor O'Shea</title>
+  </head>
+  <body class="background">
+    <div class="rainbow"></div>
+    <a href="CV-Online.pdf"><div class="menu-item" id="cv">Curriculum Vitae</div></a>
+    <a href="http://ie.linkedin.com/in/cosheaco"><div class="menu-item" id="linkedin">LinkedIn</div></a>
+	<a class="arrow" ><img src="images/arrow.png"></a>
+	<div id="extra">
+		<div class="menu-border"></div>
+		<div style="margin-top: 40px;">
+			<table width="100%">
+				<tr>
+					<td align="center" width="33%"><a href="http://www.ewb-ireland.org"><img class="extra-logo" src="images/ewb.png"></a></td>
+					<td align="center" width="33%"><a href="http://www.shoutout.ie"><img class="extra-logo" src="images/shoutout.png"></a></td>
+					<td align="center" width="34%"><a href="http://www.trinitones.com"><img class="extra-logo" src="images/tones.png"></a></td>
+				</tr>
+			<table>
+		</div>
+	</div>
+	<script>
+		$('a.arrow').on('click',function() {
+			if($('#extra').css('bottom')=='0px'){
+				$('#extra').animate({bottom: '-249px'}, 500);
+				$('.arrow').animate({bottom: '0px'}, 500);
+				$('.arrow').removeClass('arrow-down');
+			}else{
+				$('#extra').animate({bottom:'0px'}, 500);
+				$('.arrow').addClass('arrow-down');
+				$('.arrow').animate({bottom:'249px'}, 500);
+			}
+		});
+	</script>
+  </body>
+  
+</html>
