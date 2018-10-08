@@ -102,7 +102,9 @@ body
   background-color:#eee
 }
 
-/* ***** Cards CSS ***** */
+/* ***** ********* ***** */
+/*       Cards CSS       */
+/* ***** ********* ***** */
 
 .wrap
 {
@@ -256,7 +258,13 @@ body
   background-color:#E040FB;
 }
 
-/* ***** Heading CSS ***** */
+/* ***** *********** ***** */
+/*       Heading CSS       */
+/* ***** *********** ***** */
+.heading{
+  margin: auto;
+}
+
 .heading-image {
   width: 150px;
   height: 150px;
@@ -265,4 +273,15 @@ body
 
   object-fit: cover;
   object-position: center right;
+}
+
+.profile-pic{
+  display:inline-block;
+}
+
+.heading-text{
+  display:inline-block;
+  color: white;
+  font-family:'Roboto';
+  margin: auto;
 }
