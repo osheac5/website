@@ -264,6 +264,7 @@ body
 .heading {
   display: flex;
   justify-content: center;
+  flex-flow: row wrap;
 }
 
 .heading-image {
