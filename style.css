@@ -246,23 +246,24 @@ body
   }
 }
 
-.tile-me{
+.tile-me {
   background-color:#2196F3;
 }
 
-.tile-experience{
+.tile-experience {
   background-color:#8BC34A;
 }
 
-.tile-interests{
+.tile-interests {
   background-color:#E040FB;
 }
 
 /* ***** *********** ***** */
 /*       Heading CSS       */
 /* ***** *********** ***** */
-.heading{
-  margin: auto;
+.heading {
+  display: flex;
+  justify-content: center;
 }
 
 .heading-image {
@@ -275,13 +276,13 @@ body
   object-position: center right;
 }
 
-.profile-pic{
-  display:inline-block;
+.profile-pic {
+  display: inline-block;
 }
 
-.heading-text{
-  display:inline-block;
+.heading-text {
+  display: inline-block;
   color: white;
   font-family:'Roboto';
-  margin: auto;
+  margin: auto 50px;
 }
