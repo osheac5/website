@@ -287,3 +287,16 @@ body
   font-family:'Roboto';
   margin: auto 50px;
 }
+
+/* ***** ********** ***** */
+/*       NavBar CSS       */
+/* ***** ********** ***** */
+
+.navbar {
+  height: 80px;
+  background-color: transparent;
+  border: none;
+  color: white;
+  z-index: 100;
+  transition: background-color 1s ease 0s;
+}
