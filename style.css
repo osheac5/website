@@ -1,5 +1,5 @@
 .background {
-	background-color: #2F292F;
+  background-color: #2F292F;
 }
 
 .rainbow {
@@ -128,7 +128,7 @@ body
   overflow:hidden;
   color:white;
   font-family:'Roboto';
-  
+  background-image: linear-gradient(Black, White);;
 }
 .tile img
 {
@@ -139,6 +139,7 @@ body
   left:0;
   z-index:0;
   transition: all 0.4s ease-out;
+  opacity: 0.8;
 }
 .tile .text
 {
@@ -149,10 +150,9 @@ body
 }
 .tile h1
 {
- 
   font-weight:300;
   margin:0;
-  text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+  text-shadow: 2px 2px 2px #000000;
 }
 .tile h2
 {
@@ -180,6 +180,7 @@ body
   /*   background-color:#99aeff; */
   box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
   transform:scale(1.05);
+  background-image:none
 }
 .tile:hover img
 {
@@ -208,11 +209,11 @@ body
 
 .dots span
 {
-    width: 5px;
-    height:5px;
-    background-color: currentColor;
-    border-radius: 50%;
-    display:block;
+  width: 5px;
+  height:5px;
+  background-color: currentColor;
+  border-radius: 50%;
+  display:block;
   opacity:0;
   transition: transform 0.4s ease-out, opacity 0.5s ease;
   transform: translateY(30px);
@@ -246,15 +247,15 @@ body
   }
 }
 
-.tile-me {
+.tile-me:hover {
   background-color:#2196F3;
 }
 
-.tile-experience {
+.tile-experience:hover {
   background-color:#8BC34A;
 }
 
-.tile-interests {
+.tile-interests:hover {
   background-color:#E040FB;
 }
 
@@ -299,6 +300,10 @@ body
   z-index: 100;
 }
 
-.nav.navbar-nav {
-  color: white;
+.navbar-right {
+  margin-right: 100px;
+}
+
+.nav.navbar-nav a {
+  color: whitesmoke;
 }
