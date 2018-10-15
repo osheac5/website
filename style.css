@@ -128,7 +128,6 @@ body
   overflow:hidden;
   color:white;
   font-family:'Roboto';
-  background-image: linear-gradient(Black, White);;
 }
 .tile img
 {
@@ -139,7 +138,6 @@ body
   left:0;
   z-index:0;
   transition: all 0.4s ease-out;
-  opacity: 0.8;
 }
 .tile .text
 {
