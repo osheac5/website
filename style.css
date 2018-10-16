@@ -306,6 +306,17 @@ body
   color: whitesmoke;
 }
 
-/*#navbar-wrapper .navbar-nav li.active > a {
-  background-color: red;
-}*/
+#navbar-wrapper .navbar-nav li.active > a {
+  background-color: transparent;
+  font-weight: 600;
+}
+
+#navbar-wrapper .navbar-nav li.about-me > a:hover {
+  color: #2196F3;
+}
+#navbar-wrapper .navbar-nav li.my-projects > a:hover {
+  color: #8BC34A;
+}
+#navbar-wrapper .navbar-nav li.my-experience > a:hover {
+  color: #E040FB;
+}

@@ -22,19 +22,17 @@ html {
 		overflow: hidden;
 		box-shadow: 4px -4px 8px rgba(0,0,0,.4);
 			}
-	/*figure::after {
+	figure::after {
 		content: '';
 		position: absolute;
 		top: 5vmin;
 		right: 5vmin;
 		bottom: 5vmin;
 		left: 45%;
-		border: 2px dashed #fff;
-		outline: 1px solid #fff;
 		outline-offset: -5vmin;
 		backdrop-filter: grayscale(1);
 		pointer-events: none;
-			}*/
+			}
 	figure:nth-of-type(2n)::after {
 		right: 45%;
 		left: 5vmin;
@@ -46,7 +44,6 @@ html {
 		margin: 0 0 10vh auto;
 		position: sticky;
 		top: 0;
-		/* overflow: hidden;*/
 		padding: 5vmin;
 		box-shadow: -4px -4px 8px rgba(0,0,0,.4);
 			}
@@ -86,19 +83,17 @@ html {
 		right: 0;
 		transform: translate(calc(50% - 1px), -50%) rotate(-45deg) scale(-1);
 	}
-	/*section::after {
+	section::after {
 		content: '';
 		position: absolute;
 		top: 5vmin;
 		right: 45%;
 		bottom: 5vmin;
 		left: 5vmin;
-		border: 2px dashed #fff;
-		outline: 1px solid #fff;
 		outline-offset: -5vmin;
 		backdrop-filter: invert(1);
 		pointer-events: none;
-	}*/
+	}
 	section:nth-of-type(2n):after {
 		right: 5vmin;
 		left: 45%;
@@ -138,8 +133,8 @@ html {
 		color: transparent;
 		-webkit-text-stroke: 2px #212121;
 		text-decoration: none;
-    	font-weight: 900;
-    	letter-spacing: 2px;
+    font-weight: 900;
+    letter-spacing: 2px;
 	}
 	article a:hover, article a:focus {	
 		-webkit-text-stroke: 1px #999;
