@@ -134,14 +134,14 @@ html {
 		font-size: calc(1.5vmin + 1.75vmax);
 		margin-bottom: 5%;
 	}
-	a {
+	article a {
 		color: transparent;
 		-webkit-text-stroke: 2px #212121;
 		text-decoration: none;
-    font-weight: 900;
-    letter-spacing: 2px;
+    	font-weight: 900;
+    	letter-spacing: 2px;
 	}
-	a:hover, a:focus {	
+	article a:hover, article a:focus {	
 		-webkit-text-stroke: 1px #999;
 	}
 }
