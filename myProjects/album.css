@@ -1,9 +1,4 @@
-body {
-	font-family: Verdana, sans-serif;
-	margin: 0;
-  }
-  
-  * {
+* {
 	box-sizing: border-box;
   }
   
@@ -25,9 +20,12 @@ body {
   /* The Modal (background) */
   .modal {
 	display: none;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 	position: fixed;
 	z-index: 1;
-	padding-top: 100px;
+	padding-top: 10px;
 	left: 0;
 	top: 0;
 	width: 100%;
@@ -39,11 +37,9 @@ body {
   /* Modal Content */
   .modal-content {
 	position: relative;
-	background-color: #fefefe;
-	margin: auto;
+	margin: 0px auto 30px;
 	padding: 0;
-	width: 90%;
-	max-width: 1200px;
+	display: inline-block;
   }
   
   /* The Close Button */
@@ -111,14 +107,21 @@ body {
   }
   
   img {
-	margin-bottom: -4px;
-  }
+		margin-bottom: -4px;
+		height: 80vh;
+		max-height: 600px
+	}
+	.yt-vid {
+		margin-bottom: -6px;
+		width: 160vh;
+		height: 80vh;
+		max-height: 600px;
+		max-width: 1200px;
+	}
   
   .caption-container {
 	text-align: center;
-	background-color: black;
 	padding: 2px 16px;
-	color: white;
   }
   
   .demo {
@@ -132,8 +135,4 @@ body {
   
   img.hover-shadow {
 	transition: 0.3s;
-  }
-  
-  .hover-shadow:hover {
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }

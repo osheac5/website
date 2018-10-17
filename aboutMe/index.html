@@ -36,7 +36,7 @@
       <section>
         <div>
           <p>I sang a lot with the Irish Youth Choir, Irish Youth Chamber Choir, Trinity Singers and as a choral scholar with Trinity Chapel Choir.</p>
-          <p></p>
+          <p><a onclick="openModal();currentSlide(0)" class="cursor">This kind of thing &#9654;</a></p>
         </div>
       </section>
       
@@ -91,6 +91,36 @@
         </div>
       </section>
     </article>
+
+    <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+
+        <div class="mySlides">
+          <div class="numbertext">1 / 4</div>
+          <iframe class="yt-vid" src="https://www.youtube.com/embed/Lp4G5vtdSWc?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <p class="caption-text">Opening night of the BBC Proms 2013</p>
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">2 / 4</div>
+          <iframe class="yt-vid" src="https://www.youtube.com/embed/eH-M1Ctp13Y" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <p class="caption-text">Trinity Singers at Sligo Choral Festival</p>
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">3 / 4</div>
+          <img src="../images/iycc.jpg" />
+          <p class="caption-text">Irish Youth Chamber Choir in Toronto</p>
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      </div>
+      <p id="caption" class="caption">Caption Here</p>
+    </div>
+    <script src="modal.js"></script>
 
   </body>
   
