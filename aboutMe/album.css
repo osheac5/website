@@ -238,13 +238,13 @@ html {
   
   img {
 		margin-bottom: -4px;
-		height: 80vh;
+		height: 70vh;
 		max-height: 600px
 	}
 	.yt-vid {
 		margin-bottom: -6px;
-		width: 160vh;
-		height: 80vh;
+		width: 140vh;
+		height: 70vh;
 		max-height: 600px;
 		max-width: 1200px;
 	}
