@@ -111,8 +111,8 @@ html {
 		height: 100%;
 		padding: 1rem;
 	}
-	h1,
-	h2 {
+	article h1,
+	article h2 {
 		margin: 15% 0 auto;
 		font-size: calc(5vmin + 3vmax);
 		text-align: center;
@@ -120,7 +120,7 @@ html {
 		line-height: 1;
 		word-spacing: .5rem;
 	}
-	p {
+	article p {
 		text-align: right;
 		width: 100%;
 		font-family: "Cormorant", serif;
@@ -152,7 +152,7 @@ html {
 	flex-direction: column;
 	justify-content: center;
 	flex-direction: column;
-  	align-items: center;
+  align-items: center;
 	position: fixed;
 	z-index: 1;
 	padding-top: 10px;
@@ -180,6 +180,7 @@ html {
 	right: 25px;
 	font-size: 35px;
 	font-weight: bold;
+	z-index: 1;
   }
   
   .close:hover,
@@ -236,17 +237,26 @@ html {
 	top: 0;
   }
   
-  img {
-		margin-bottom: -4px;
-		height: 70vh;
-		max-height: 600px
+	.item > img {
+		margin: 0px auto;
+		height: 70vh !important;
+		max-height: 600px;
 	}
-	.yt-vid {
-		margin-bottom: -6px;
+	.item > .yt-vid {
+		margin: 0px auto;
 		width: 140vh;
 		height: 70vh;
 		max-height: 600px;
 		max-width: 1200px;
+		display: block;
+	}
+
+	.carousel-caption {
+		text-align: center;
+		right: 0;
+		left: 0;
+		bottom: 50px;
+		position: static;
 	}
   
   .demo {
@@ -266,4 +276,19 @@ html {
   }
   .caption-text {
 	display: none;
-  }
+	}
+	
+
+
+
+	.navbar-wrapper {
+		position: fixed;
+		top: 0;
+		right: 50px;
+		z-index: 10;
+	}
+
+	.navbar-inverse .navbar-nav > li > a {
+		text-shadow: 1px 1px 2px rgba(13, 13, 13, 0.8);
+		color: whitesmoke;
+	}
