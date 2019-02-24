@@ -1,162 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="../style.css">
-    <link rel="stylesheet" type="text/css" href="album.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-		<script>
-			$(function(){
-				$("#navbar").load("navbar.html");
-        $("#album").load("album.html"); 
-			});
-		</script>
-    <title>Conor O'Shea</title>
-  </head>
-  <body class="background">
-    <div id="navbar"></div>
-    <article>
-      <figure>
-        <img src='../images/collegeClass.jpg'/>
-      </figure>
-      <section>
-          <div>
-            <h1>Uni</h1>
-            <p>I graduated with a master's in Computer Engineering from Trinity College Dublin in 2016</p>
-          </div>
-      </section>
+<html lang="en" >
 
-      <figure>
-        <img src='../images/choir.jpg'/>
-      </figure>
-      <section>
-          <div>
-            <h1>Music</h1>
-            <p>I've always been very interested in playing music. I played piano from a very young age, and got more involved in singing in choirs around the time that I left school.</p>
-          </div>
-      </section>
-      
-      <figure>
-        <img src='../images/proms.jpg'/>
-        <iframe src="https://open.spotify.com/embed/album/2ePjpOXMx0hR14hzxmXgVd" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-      </figure>
-      <section>
-        <p>I sang a lot with the Irish Youth Choir, Irish Youth Chamber Choir, Trinity Singers and as a choral scholar with Trinity Chapel Choir.</p>
-        <p><a onclick="openModal();" class="cursor">&#9654; This kind of thing</a></p>
-      </section>
-      
-      <figure>
-        <img src='../images/salty-dog.jpg'/>
-      </figure>
-      <section>
-        <div>
-          <p>But mostly I sang with a group called The Trinitones. From its inception in 2012 to its Australian tour in 2016.</p>
-          <p><a onclick="openModal2();" class="cursor">&#9654; Here are some of the things we got up to.</a></p>
-          <p>Now I sing with a group called Laetare.</p>
-        </div>
-      </section>
-    </article>
+<head>
+  <meta charset="UTF-8">
+  <title>Split 3D Carousel</title>
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:300:italic" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 
-
-    <div id="myCarousel" class="carousel slide modal" data-ride="carousel" data-interval="500000">
-      <span class="close cursor" onclick="closeModal()">&times;</span>
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-      </ol>
-    
-      <!-- Wrapper for slides -->
-      <div class="carousel-inner">
-        <div class="item active">
-          <iframe class="yt-vid" src="https://www.youtube.com/embed/Lp4G5vtdSWc?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          <div class="carousel-caption">
-            <h3>BBC Proms</h3>
-            <p>Opening night, 2013</p>
-          </div>
-        </div>
-    
-        <div class="item">
-          <iframe class="yt-vid" src="https://www.youtube.com/embed/eH-M1Ctp13Y" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          <div class="carousel-caption">
-            <h3>Trinity Singers</h3>
-            <p>Sligo Choral Festival</p>
-          </div>
-        </div>
-    
-        <div class="item">
-          <img src="../images/iycc.jpg">
-          <div class="carousel-caption">
-            <h3>Irish Youth Chamber Choir</h3>
-            <p>Bloomsday Festival Toronto</p>
-          </div>
-        </div>
-      </div>
-    
-      <!-- Left and right controls -->
-      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="right carousel-control" href="#myCarousel" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div>
-
-    <div id="carousel2" class="carousel slide modal" data-ride="carousel" data-interval="500000">
-        <span class="close cursor" onclick="closeModal2()">&times;</span>
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-          <li data-target="#carousel2" data-slide-to="0" class="active"></li>
-          <li data-target="#carousel2" data-slide-to="1"></li>
-          <li data-target="#carousel2" data-slide-to="2"></li>
-        </ol>
-      
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner">
-          <div class="item active">
-            <img src="../images/tones.jpg">
-            <div class="carousel-caption">
-              <h3>BBC Proms</h3>
-              <p>Opening night, 2013</p>
-            </div>
-          </div>
-      
-          <div class="item">
-            <img src="../images/tones.jpg">
-            <div class="carousel-caption">
-              <h3>Trinity Singers</h3>
-              <p>Sligo Choral Festival</p>
-            </div>
-          </div>
-      
-          <div class="item">
-            <img src="../images/tones.jpg">
-            <div class="carousel-caption">
-              <h3>Irish Youth Chamber Choir</h3>
-              <p>Bloomsday Festival Toronto</p>
-            </div>
-          </div>
-        </div>
-      
-        <!-- Left and right controls -->
-        <a class="left carousel-control" href="#carousel2" data-slide="prev">
-          <span class="glyphicon glyphicon-chevron-left"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#carousel2" data-slide="next">
-          <span class="glyphicon glyphicon-chevron-right"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
-
-    <script src="modal.js"></script>
-
-  </body>
   
+      <link rel="stylesheet" href="scroller.css">
+
+  
+</head>
+
+<body>
+
+  <div class="carousel">
+    <div class="carousel__control">
+    </div>
+    <div class="carousel__stage">
+        <div class="spinner spinner--left">
+            <div class="spinner__face js-active" data-bg="#27323c">
+                <div class="content" data-type="iceland">
+                    <div class="content__left">
+                        <h1>ICELAND<br><span>EUROPE</span></h1>
+                    </div>
+                    <div class="content__right">
+                        <div class="content__main">
+                            <p>“As I flew north to begin my third circuit of Iceland in four years, I was slightly anxious. The number of visitors to Iceland has doubled in that period, and I feared this might mean a little less magic to go around. At the end of this trip, 6000km later, I'm thrilled to report that the magic levels remain high. It's found in glorious football victories and Viking chants, kayaking among icebergs, sitting with puffins under the midnight sun and crunching across brand-new lava fields.” </p>
+                          <p>– Carolyn Bain</p>
+                        </div>
+                        <h3 class="content__index">01</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="spinner__face" data-bg="#19304a">
+                <div class="content" data-type="china">
+                    <div class="content__left">
+                        <h1>CHINA<br><span>ASIA</span></h1>
+                    </div>
+                    <div class="content__right">
+                        <div class="content__main">
+                            <p>“Its modern face is dazzling, but China is no one-trick pony. The world's oldest continuous civilisation isn't all smoked glass and brushed aluminium and while you won't be tripping over artefacts – three decades of round-the-clock development and rash town-planning have taken their toll – rich seams of antiquity await.”</p>
+                          <p>– Damian Harper</p>
+                        </div>
+                        <h3 class="content__index">02</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="spinner__face" data-bg="#2b2533">
+                <div class="content" data-type="usa">
+                    <div class="content__left">
+                        <h1>USA<br><span>NORTH AMERICA</span></h1>
+                    </div>
+                    <div class="content__right">
+                        <div class="content__main">
+                            <p>“When it comes to travel, America has always floored me with its staggering range of possibilities. Not many other countries have so much natural beauty – mountains, beaches, rainforest, deserts, canyons, glaciers – coupled with fascinating cities to explore, an unrivaled music scene and all the things that make travel so rewarding (friendly locals, great restaurants and farmers markets, and plenty of quirky surprises).” </p>
+                          <p>– Regis St Louis</p>
+                        </div>
+                        <h3 class="content__index">03</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="spinner__face" data-bg="#312f2d">
+                <div class="content" data-type="peru">
+                    <div class="content__left">
+                        <h1>PERU<br><span>SOUTH AMERICA</span></h1>
+                    </div>
+                    <div class="content__right">
+                        <div class="content__main">
+                            <p>“For me, Peru is the molten core of South America, a distillation of the oldest traditions and the finest building, weaving and art made by the most sophisticated cultures on the continent. In Peru the wildest landscapes – from frozen Andean peaks to the deep Amazon – help us re-forge our connection to the natural world. It is also a cultural stew, where diverse peoples live side by side, negotiating modern life with humor and aplomb. Beyond that, the cuisine alone makes it worth the trip. Every return is rich and surprising.”</p>
+                          <p>– Carolyn McCarthy</p>
+                        </div>
+                        <h3 class="content__index">04</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--  Poor man's preloader -->
+<div style="height: 0; width: 0; overflow: hidden">
+<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/215059/peru.jpg">
+<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/215059/canada.jpg"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/215059/china.jpg"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/215059/usa.jpg"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/215059/iceland.jpg"></div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+
+  
+
+    <script  src="scroller.js"></script>
+
+
+
+
+</body>
+
 </html>
