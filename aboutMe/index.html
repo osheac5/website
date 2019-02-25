@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Split 3D Carousel</title>
+  <title>Conor O'Shea</title>
   <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Merriweather:300:italic" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
@@ -14,11 +14,19 @@
 
   <link rel="stylesheet" href="scroller.css">
   <link rel="stylesheet" href="album.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" type="text/css" href="navbar.css">
+
+  <script>
+    $(function(){
+      $("#navbar").load("navbar.html");
+    });
+  </script>
 
 </head>
 
-<body>
-
+<body class="background">
+  <div id="navbar"></div>
   <div class="carousel">
     <div class="carousel__control">
     </div>
