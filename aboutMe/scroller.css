@@ -13,7 +13,7 @@ body {
 }
 .carousel {
   position: relative;
-  height: 100%;
+  height: calc(100% - 20px);
   overflow: hidden;
   -webkit-perspective: 50vw;
           perspective: 50vw;
@@ -64,7 +64,7 @@ body {
 }
 .carousel__stage {
   position: absolute;
-  top: 100px;
+  top: 90px;
   bottom: 20px;
   left: 20px;
   right: 20px;
@@ -230,7 +230,7 @@ body {
   color: #fff;
 }
 [data-type="iceland"] .content__left {
-  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/215059/iceland.jpg");
+  background-image: url("../images/salty-dog.jpg");
 }
 .spinner--right [data-type="iceland"] .content__left {
   background-image: none;
