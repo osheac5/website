@@ -190,6 +190,7 @@ body {
   width: 100%;
   letter-spacing: 0.15em;
   line-height: 0.6;
+  text-shadow: 2px 2px 2px #000000;
 }
 .content__left span {
   font-size: 1vw;
