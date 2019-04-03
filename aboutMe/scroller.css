@@ -237,7 +237,7 @@ body {
   background-image: none;
 }
 [data-type="china"] .content__left {
-  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/215059/china.jpg");
+  background-image: url("../images/shoutout.png");
 }
 .spinner--right [data-type="china"] .content__left {
   background-image: none;
