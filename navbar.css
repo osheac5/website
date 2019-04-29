@@ -31,3 +31,11 @@
   #navbar-wrapper .navbar-nav li.my-experience > a:hover {
     color: #E040FB;
   }
+
+  #navbar-wrapper .navbar-nav li.about-me.active {
+    color: #2196F3;
+  }
+
+  #navbar-wrapper .navbar-nav li.my-experience.active {
+    color: #E040FB;
+  }

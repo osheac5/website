@@ -216,8 +216,7 @@ body {
   margin: 0;
   opacity: 0.8;
 }
-.content__right .content__main p:last-child {
-  text-transform: uppercase;
+.content__right .content__main p {
   letter-spacing: 0.15em;
   font-size: 0.85em;
 }
@@ -243,14 +242,8 @@ body {
   background-image: none;
 }
 [data-type="usa"] .content__left {
-  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/215059/usa.jpg");
+  background-image: url("../images/books.jpg");
 }
 .spinner--right [data-type="usa"] .content__left {
-  background-image: none;
-}
-[data-type="peru"] .content__left {
-  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/215059/peru.jpg");
-}
-.spinner--right [data-type="peru"] .content__left {
   background-image: none;
 }
