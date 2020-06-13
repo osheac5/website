@@ -2,6 +2,10 @@
   background-color: #2F292F;
 }
 
+.heading-text {
+  text-align: center;
+}
+
 .rainbow {
     position: absolute;
     top: 0px;
@@ -319,4 +323,20 @@ body
 }
 #navbar-wrapper .navbar-nav li.my-experience > a:hover {
   color: #E040FB;
+}
+.nav-icon > div {
+  height: 20px;
+  width: 20px;
+  margin: 15px 15px;
+}
+.nav-icon > div:hover {
+  cursor: pointer;
+}
+.github-icon {
+  background-image: url(images/github-logo.png);
+  background-size: cover;
+}
+.leetcode-icon {
+  background-image: url(images/leetcode-logo.png);
+  background-size: cover;
 }
