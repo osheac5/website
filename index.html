@@ -1,64 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+        $(function() {
+            $("#navbar").load("navbar.html");
+            $("#cards").load("cards.html");
+            $("#heading").load("heading.html");
+        });
+    </script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-169281328-1"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
 
-      gtag('config', 'UA-169281328-1');
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-169281328-1');
     </script>
     <script src="https://www.googleoptimize.com/optimize.js?id=OPT-NKHLCLH"></script>
-    <meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-		<script>
-			$(function(){
-				$("#navbar").load("navbar.html");
-				$("#cards").load("cards.html");
-				$("#heading").load("heading.html"); 
-			});
-		</script>
-
     <title>Conor O'Shea</title>
-  </head>
-  <body class="background">
-		
-		<div id="navbar"></div>
-		<div id="heading"></div>
-		<div id="cards"></div>
+</head>
 
-	<!--<a class="arrow" ><img src="images/arrow.png"></a>-->
-	<div id="extra">
-		<div class="menu-border"></div>
-		<div style="margin-top: 40px;">
-			<table width="100%">
-				<tr>
-					<td align="center" width="33%"><a href="http://www.ewb-ireland.org"><img class="extra-logo" src="images/ewb.png"></a></td>
-					<td align="center" width="33%"><a href="http://www.shoutout.ie"><img class="extra-logo" src="images/shoutout.png"></a></td>
-					<td align="center" width="34%"><a href="http://www.trinitones.com"><img class="extra-logo" src="images/tones.png"></a></td>
-				</tr>
-			<table>
-		</div>
-	</div>
-	<script>
-		$('a.arrow').on('click',function() {
-			if($('#extra').css('bottom')=='0px'){
-				$('#extra').animate({bottom: '-249px'}, 500);
-				$('.arrow').animate({bottom: '0px'}, 500);
-				$('.arrow').removeClass('arrow-down');
-			}else{
-				$('#extra').animate({bottom:'0px'}, 500);
-				$('.arrow').addClass('arrow-down');
-				$('.arrow').animate({bottom:'249px'}, 500);
-			}
-		});
-	</script>
-  </body>
-  
+<body class="background">
+
+    <div id="navbar"></div>
+    <div id="heading"></div>
+    <div id="cards"></div>
+
+    <!--<a class="arrow" ><img src="images/arrow.png"></a>-->
+    <div id="extra">
+        <div class="menu-border"></div>
+        <div style="margin-top: 40px;">
+            <table width="100%">
+                <tr>
+                    <td align="center" width="33%">
+                        <a href="http://www.ewb-ireland.org"><img class="extra-logo" src="images/ewb.png"></a>
+                    </td>
+                    <td align="center" width="33%">
+                        <a href="http://www.shoutout.ie"><img class="extra-logo" src="images/shoutout.png"></a>
+                    </td>
+                    <td align="center" width="34%">
+                        <a href="http://www.trinitones.com"><img class="extra-logo" src="images/tones.png"></a>
+                    </td>
+                </tr>
+                <table>
+        </div>
+    </div>
+    <script>
+        $('a.arrow').on('click', function() {
+            if ($('#extra').css('bottom') == '0px') {
+                $('#extra').animate({
+                    bottom: '-249px'
+                }, 500);
+                $('.arrow').animate({
+                    bottom: '0px'
+                }, 500);
+                $('.arrow').removeClass('arrow-down');
+            } else {
+                $('#extra').animate({
+                    bottom: '0px'
+                }, 500);
+                $('.arrow').addClass('arrow-down');
+                $('.arrow').animate({
+                    bottom: '249px'
+                }, 500);
+            }
+        });
+    </script>
+</body>
+
 </html>
