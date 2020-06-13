@@ -37,48 +37,52 @@
 
     <div id="navbar"></div>
     <div id="heading"></div>
-    <div id="cards"></div>
 
-    <!--<a class="arrow" ><img src="images/arrow.png"></a>-->
-    <div id="extra">
-        <div class="menu-border"></div>
-        <div style="margin-top: 40px;">
-            <table width="100%">
-                <tr>
-                    <td align="center" width="33%">
-                        <a href="http://www.ewb-ireland.org"><img class="extra-logo" src="images/ewb.png"></a>
-                    </td>
-                    <td align="center" width="33%">
-                        <a href="http://www.shoutout.ie"><img class="extra-logo" src="images/shoutout.png"></a>
-                    </td>
-                    <td align="center" width="34%">
-                        <a href="http://www.trinitones.com"><img class="extra-logo" src="images/tones.png"></a>
-                    </td>
-                </tr>
-                <table>
-        </div>
-    </div>
-    <script>
-        $('a.arrow').on('click', function() {
-            if ($('#extra').css('bottom') == '0px') {
-                $('#extra').animate({
-                    bottom: '-249px'
-                }, 500);
-                $('.arrow').animate({
-                    bottom: '0px'
-                }, 500);
-                $('.arrow').removeClass('arrow-down');
-            } else {
-                $('#extra').animate({
-                    bottom: '0px'
-                }, 500);
-                $('.arrow').addClass('arrow-down');
-                $('.arrow').animate({
-                    bottom: '249px'
-                }, 500);
-            }
-        });
-    </script>
+    <ul class="wrap">
+        <li class="tile tile-me" onclick="location.href='./aboutMe/index.html';">
+            <img src='images/musicbw.jpg' />
+            <div class="text">
+                <h1>About Me.</h1>
+                <h2 class="animate-text">Find out a bit about me</h2>
+                <p class="animate-text">My hobbies, musical pursuits, and general interests</p>
+                <div class="dots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </li>
+
+
+        <li class="tile tile-experience" onclick="location.href='https://github.com/osheac5/'">
+            <img src='images/codingbwgrad.jpg' />
+            <div class="text">
+                <h1>My Projects.</h1>
+                <h2 class="animate-text">Have a look at my personal projects</h2>
+                <p class="animate-text">Find out what kind of projects I like to take on in my free time</p>
+                <div class="dots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </li>
+
+        <li class="tile tile-interests" onclick="sendGaEvent('button', 'click', 'My Experience');location.href='./myExperience/index.html';">
+            <img src='images/experiencebwgrad.JPG' />
+            <div class="text">
+                <h1>My Experience.</h1>
+                <h2 class="animate-text">My professional experience</h2>
+                <p class="animate-text">Including projects I've worked on, and contributions I've made to workplace culture</p>
+                <div class="dots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </li>
+    </ul>
+
 </body>
 
 </html>
